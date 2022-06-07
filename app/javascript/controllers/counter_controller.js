@@ -70,4 +70,9 @@ export default class extends ApplicationController {
   // finalizeDance(element, reflex, noop, reflexId) {
   //   element.innerText = '\nNow, the cleanup can begin!'
   // }
+
+  increment(event) {
+    event.preventDefault()
+    this.stimulate('Counter#increment', 1)
+  }
 }
